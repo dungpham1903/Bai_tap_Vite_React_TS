@@ -1,8 +1,10 @@
 
-import searchIcon from '../images/search-line.png';
-import cartIcon from '../images/Badge.png';
-import logo from '../images/Logo.png';
-import menuLine from '../images/menu-line.png';
+import searchIcon from '../../assets/images/search-line.png';
+import cartIcon from '../../assets/images/Badge.png';
+import logo from '../../assets/images/Logo.png';
+import menuLine from '../../assets/images/menu-line.png';
+import './header.scss';
+
 export const Header = () => {
     return (<>
         <header className='header'>
@@ -20,7 +22,6 @@ export const Header = () => {
                         <li className='header__navbar-item'>Giới thiệu</li>
                         <li className='header__navbar-item'>Liên hệ</li>
                     </ul>
-
                     <form className='header__search header__search--separate'>
                         <div className='search__input show-on-desktop'>
                             <img src={searchIcon} alt='' width={24} height={24}></img>

@@ -1,19 +1,17 @@
-import point1 from '../images/Frame 618.png';
-import point2 from '../images/Frame 617.png';
-import search from '../images/Search.png';
-import quality from '../images/Qality.png';
-import repeat from '../images/Repeat.png';
-import pic1 from '../images/pic1.png';
-import pic2 from '../images/pic2.png';
-import pic3 from '../images/pic3.png';
-import pic4 from '../images/pic4.png';
-import arrowRight from '../images/Arrow-Right.png';
-import pic5 from '../images/Rectangle 152.png';
-import pic6 from '../images/Rectangle 150.png';
-import ellipse from '../images/Ellipse.png';
+
+import search from '../assets/images/search-line.png';
+import quality from '../assets/images/Qality.png';
+import repeat from '../assets/images/Repeat.png';
+import pic1 from '../assets/images/pic1.png';
+import pic2 from '../assets/images/pic2.png';
+import pic3 from '../assets/images/pic3.png';
+import pic4 from '../assets/images/pic4.png';
+import arrowRight from '../assets/images/Arrow-Right.png';
+import pic5 from '../assets/images/Rectangle 152.png';
+import pic6 from '../assets/images/Rectangle 150.png';
+import ellipse from '../assets/images/Ellipse.png';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
-
 import { Pagination } from 'swiper/modules';
 
 import 'swiper/css';
@@ -21,14 +19,23 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 
+import './home.scss';
+
 export const Home = () => {
     return (<>
         <body style={{ fontFamily: 'Open Sans, sans-serif' }}>
-            <Swiper spaceBetween={50} slidesPerView={1} pagination={true} modules={[Pagination]} className="mySwiper">
+            <Swiper
+                spaceBetween={50}
+                slidesPerView={1}
+                pagination={{
+                    clickable: true,
+                }}
+                modules={[Pagination]}
+                className="mySwiper">
                 <SwiperSlide>
                     <div className='banner banner-1'>
                         <div className='banner-container'>
-                            <div className='row-1 '>
+                            <div className='row-1'>
                                 <div className='banner-content'>
                                     <div className='banner-content-title'>
                                         <span className="banner-text-lg">Bộ sưu tập mới</span>
@@ -41,12 +48,7 @@ export const Home = () => {
                                     <div className='banner-item'>
                                         <p className="banner-text-sm">Chúng tôi tự tin cung cấp cho quý khách những sản phẩm đá quý tốt nhất, dịch vụ của chúng tôi đã có mặt hơn 12 tỉnh thành Việt Nam. Sang trọng, quý phái là những gì chúng tôi mang lại cho khách hàng.</p>
                                         <div className="bg-bt">XEM THÊM</div>
-                                        {/* <div className="point">
-                                            <img src={point2} alt='' width={12} height={12}></img>
-                                            <img src={point1} alt='' width={6} height={6}></img>
-                                            <img src={point1} alt='' width={6} height={6}></img>
-                                            <img src={point1} alt='' width={6} height={6}></img>
-                                        </div> */}
+
                                     </div>
                                 </div>
                             </div>
@@ -57,8 +59,18 @@ export const Home = () => {
                     <div className="Banner banner-2">
                     </div>
                 </SwiperSlide>
-                <SwiperSlide>Slide 3</SwiperSlide>
-                <SwiperSlide>Slide 4</SwiperSlide>
+                <SwiperSlide>
+                    <div className="Banner banner-2">
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <div className="Banner banner-2">
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <div className="Banner banner-2">
+                    </div>
+                </SwiperSlide>
             </Swiper>
             <div className="Noven-home">
                 <div className="Home-container">
@@ -142,7 +154,7 @@ export const Home = () => {
                     </div>
                 </div>
             </div>
-            <div className='banner banner-2'>
+            <div className='banner banner-2 '>
                 <div className='banner-container'>
                     <div className='row-1 '>
                         <div className='banner-content-2'>
@@ -156,7 +168,7 @@ export const Home = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className='banner-item gap-5'>
+                            <div className='banner-item'>
                                 <p className="banner-text-sm">Chúng tôi tự tin cung cấp cho quý khách những sản phẩm đá quý tốt nhất, dịch vụ của chúng tôi đã có mặt hơn 12 tỉnh thành Việt Nam. Sang trọng, quý phái là những gì chúng tôi mang lại cho khách hàng.</p>
                                 <div className="banner-bt-flex-row">
                                     <div className="bg-bt bt-yellow">MUA NGAY</div>
@@ -171,8 +183,8 @@ export const Home = () => {
                 <div className="Home-container">
                     <div className="Home-content-4">
                         <div className="Content-4-title">
-                            <span>Sản phẩm nổi bật trong tháng</span>
-                            <span>Mua sắm ngay các sản phẩm bán chạy nhất của tháng, có thể bạn cũng sẽ thích những mặt hàng này,
+                            <span className='title-md'>Sản phẩm nổi bật trong tháng</span>
+                            <span className='text-sm'>Mua sắm ngay các sản phẩm bán chạy nhất của tháng, có thể bạn cũng sẽ thích những mặt hàng này,
                                 hãy thêm chúng vào giỏ hàng của bạn ngay bây giờ.</span>
                         </div>
                         <div className="Content-4-Card">
