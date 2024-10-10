@@ -3,21 +3,21 @@ import searchIcon from '../../assets/images/search-line.png';
 import cartIcon from '../../assets/images/Badge.png';
 import logo from '../../assets/images/Logo.png';
 import menuLine from '../../assets/images/menu-line.png';
-import './header.scss';
 
+import { useRef } from "react";
+import './header.scss'
+import Navbar from './Navbar';
 export const Header = () => {
     return (<>
         <header className='header'>
             <div className='grid-header'>
-                <nav className='container__header'>
-                    <div className='header__menu-line hide-on-desktop'>
-                        <img src={menuLine} alt='' width={27} height={27}></img>
-                    </div>
+                <div className='container__header'>
+                    <Navbar></Navbar>
                     <div className='header__logo'>
                         <img src={logo} alt='' width={184} height={60}></img>
                     </div>
                     <ul className='header__navbar-list show-on-desktop'>
-                        <li className='header__navbar-item' style={{ color: '#003468', fontWeight: 'bold', }}>Trang chủ</li>
+                        <li className='header__navbar-item'>Trang chủ</li>
                         <li className='header__navbar-item'>Sản phẩm</li>
                         <li className='header__navbar-item'>Giới thiệu</li>
                         <li className='header__navbar-item'>Liên hệ</li>
@@ -34,7 +34,7 @@ export const Header = () => {
                             <img src={cartIcon} alt='' width={27} height={27}></img>
                         </div>
                     </form>
-                </nav>
+                </div>
             </div>
         </header>
     </>)

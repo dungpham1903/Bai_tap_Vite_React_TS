@@ -1,8 +1,8 @@
 // import React from 'react'
 import { Footer } from './components/footer/Footer'
 import { Header } from './components/header/Header'
+import Navbar from './components/header/Navbar'
 import { Home } from './components/Home'
-import MySwiper from './components/MySwiper'
 
 
 function App() {
@@ -11,8 +11,7 @@ function App() {
       <Header />
       <Home />
       <Footer />
-
-      {/* <MySwiper></MySwiper> */}
+      {/* <Navbar></Navbar> */}
     </div>
   </>)
 }

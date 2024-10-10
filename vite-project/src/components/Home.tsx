@@ -10,6 +10,10 @@ import arrowRight from '../assets/images/Arrow-Right.png';
 import pic5 from '../assets/images/Rectangle 152.png';
 import pic6 from '../assets/images/Rectangle 150.png';
 import ellipse from '../assets/images/Ellipse.png';
+import diamond from '../assets/images/collectionDiamond.png';
+import r1 from '../assets/images/r1.png';
+import view from '../assets/images/eye-line.png';
+import addToCard from '../assets/images/cart-line.png';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination } from 'swiper/modules';
@@ -39,7 +43,7 @@ export const Home = () => {
                                 <div className='banner-content'>
                                     <div className='banner-content-title'>
                                         <span className="banner-text-lg">Bộ sưu tập mới</span>
-                                        <span className="banner-text-lg"><span className='yellow-text'>Giảm 15% </span>giá sản phẩm
+                                        <span className="banner-text-lg"><span className='text-yellow'>Giảm 15% </span>giá sản phẩm
                                         </span>
                                         <div className="banner-content-title-ellipse">
                                             <img src={ellipse} alt="Ellipse" className="ellipse-img"></img>
@@ -163,7 +167,7 @@ export const Home = () => {
                                 <div className="title-line-2">
                                     <span className="banner-text-lg-2 text-white">khoảng cách </span>
                                     <div className="banner-content-title-ellipse">
-                                        <span className='banner-text-lg-2 yellow-text'> FREE SHIP</span>
+                                        <span className='banner-text-lg-2 text-yellow'> FREE SHIP</span>
                                         <img src={ellipse} alt="Ellipse" className="ellipse-img"></img>
                                     </div>
                                 </div>
@@ -188,8 +192,70 @@ export const Home = () => {
                                 hãy thêm chúng vào giỏ hàng của bạn ngay bây giờ.</span>
                         </div>
                         <div className="Content-4-Card">
-                            <div className="card-lg"></div>
-                            <div className="card-sm"></div>
+                            <div className="card-lg">
+                                <img src={diamond}></img>
+                                <div className='card-lg-content'>
+                                    <span className='text-navy' style={{ fontSize: 18 }}>Nhẫn cưới Kim cương, Chung Đôi Vàng trắng</span>
+                                    <div className='text-yellow' style={{ fontSize: 24 }}>15.000.000 đ</div>
+                                    <div className='text-line'>22.000.000đ (-15%)</div>
+                                </div>
+                                <div className='card-lg-view-more'>XEM THÊM</div>
+                            </div>
+                            <div className='cards-sm'>
+                                <div className="card-sm">
+                                    <img src={r1}></img>
+                                    <div className='card-sm-content'>
+                                        <span className='text-navy' style={{ fontSize: 16 }}>Nhẫn cưới Kim cương, Chung Đôi Vàng trắng</span>
+                                        <div className='text-yellow' style={{ fontSize: 20 }}>15.000.000 đ</div>
+                                        <div className='text-line'>22.000.000đ (-15%)</div>
+                                    </div>
+                                    <div className='card-sm-bt'>
+                                        <div className="view"></div>
+                                        <div className="add"></div>
+                                    </div>
+                                </div>
+                                <div className="card-sm">
+                                    <img src={r1}></img>
+                                    <div className='card-sm-content'>
+                                        <span className='text-navy' style={{ fontSize: 16 }}>Nhẫn cưới Kim cương, Chung Đôi Vàng trắng</span>
+                                        <div className='text-yellow' style={{ fontSize: 20 }}>15.000.000 đ</div>
+                                        <div className='text-line'>22.000.000đ (-15%)</div>
+                                    </div>
+                                    <div className='card-sm-bt'>
+                                        <div className="view"></div>
+                                        <div className="add"></div>
+                                    </div>
+                                </div>
+                                <div className="card-sm">
+                                    <img src={r1}></img>
+                                    <div className='card-sm-content'>
+                                        <span className='text-navy' style={{ fontSize: 16 }}>Nhẫn cưới Kim cương, Chung Đôi Vàng trắng</span>
+                                        <div className='text-yellow' style={{ fontSize: 20 }}>15.000.000 đ</div>
+                                        <div className='text-line'>22.000.000đ (-15%)</div>
+                                    </div>
+                                    <div className='card-sm-bt'>
+                                        <div className="card__view">
+                                            {/* <img src={r1}></img> */}
+
+                                        </div>
+                                        <div className="card__add">
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="card-sm">
+                                    <img src={r1}></img>
+                                    <div className='card-sm-content'>
+                                        <span className='text-navy' style={{ fontSize: 16 }}>Nhẫn cưới Kim cương, Chung Đôi Vàng trắng</span>
+                                        <div className='text-yellow' style={{ fontSize: 20 }}>15.000.000 đ</div>
+                                        <div className='text-line'>22.000.000đ (-15%)</div>
+                                    </div>
+                                    <div className='card-sm-bt'>
+                                        <div className="view"></div>
+                                        <div className="add"></div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
