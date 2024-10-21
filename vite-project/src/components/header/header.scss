@@ -10,9 +10,9 @@ header{
 }
 header .menu__items{
     position: relative;
-    
+    display: flex;
+    align-items: center;
 }
-
 .menu__items button{
     display: flex;
     align-items: center;
@@ -55,31 +55,31 @@ header .menu__items{
     border-radius: 0.5rem;
     display: none;
     z-index: 2;
-
 }
 .dropdown.show{
     display: block;
 }
 .dropdown .dropdown-submenu{
     position: absolute;
-    left: 105%;
+    left: 100%;
     top: 0px;
 }
 .menu__items .arrow{
     display: inline-block; /* Để đảm bảo thẻ span có thể xoay */
     transition: transform 0.3s ease; /* Thêm hiệu ứng chuyển động */
 }
-button:hover .arrow {
+.menu__items .arrow.rotate{
     transform: rotate(180deg); /* Xoay 180 độ khi hover vào button */
 }
+
+// button:hover .arrow {
+//     transform: rotate(180deg); /* Xoay 180 độ khi hover vào button */
+// }
 
 .container__header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-.header__menu-line{
-    display: block;
 }
 .header__navbar-list{
     display: none;

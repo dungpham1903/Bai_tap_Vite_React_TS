@@ -1,0 +1,84 @@
+
+.swiper-cards {
+    width: 290px;
+    height: 150px;
+  }
+  
+  .swiper-slide-cards {
+    display: flex;
+    font-size: 22px;
+    color: #fff;
+  }
+  .Customer--rattings{
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #000; 
+    font-size: 14px;
+    height: 100%;
+    justify-content: space-between;
+  }
+  .Customer{
+    width: 100%;
+    border-top: 1px solid #dbe3eb ;
+    padding-top: 10px;
+    display:flex;
+    gap: 10px
+  }
+
+  .Customer--avatar img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  .swiper-slide:nth-child(1n) {
+    background-color: rgb(255, 255, 255);
+  }
+  
+  .swiper-slide:nth-child(2n) {
+    background-color: rgb(255, 255, 255);
+  }
+  
+  .swiper-slide:nth-child(3n) {
+    background-color: rgb(255, 255, 255);
+  }
+  
+  .swiper-slide:nth-child(4n) {
+    background-color: rgb(255, 255, 255);
+  }
+  
+  .swiper-slide:nth-child(5n) {
+    background-color: rgb(118, 163, 12);
+  }
+  
+  .swiper-slide:nth-child(6n) {
+    background-color: rgb(180, 10, 47);
+  }
+  
+  .swiper-slide:nth-child(7n) {
+    background-color: rgb(35, 99, 19);
+  }
+  
+  .swiper-slide:nth-child(8n) {
+    background-color: rgb(0, 68, 255);
+  }
+  
+  .swiper-slide:nth-child(9n) {
+    background-color: rgb(218, 12, 218);
+  }
+  
+  .swiper-slide:nth-child(10n) {
+    background-color: rgb(54, 94, 77);
+  }
+  
+  @media (min-width: 768px) and (max-width: 1024px) {
+    
+  }
+  @media (max-width: 426px){
+    .swiper-cards {
+      width: 230px;
+      height: 170px;
+    }
+  }
