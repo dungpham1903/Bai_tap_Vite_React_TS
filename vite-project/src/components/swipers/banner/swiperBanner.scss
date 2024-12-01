@@ -1,0 +1,33 @@
+.swiper-banner {
+    width: 100%;
+    height: 100%;
+}
+  
+.swiper-slide-banner {
+    position: relative;
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media (min-width: 1024px){
+    .bullet-custom .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal{
+        bottom: 32px;
+    }
+};
+
+.swiper-pagination-bullet {
+    width: 10px; 
+    height: 10px;
+    background-color: #fff; 
+    opacity: 1;
+    margin: 0 5px; 
+    border: 2px solid #003468;
+}
+  
+.swiper-pagination-bullet-active {
+    background-color: #003468; 
+}
+

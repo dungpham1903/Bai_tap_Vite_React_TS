@@ -1,0 +1,13 @@
+.custom-pagination .swiper-pagination-bullet {
+    width: 12px;             /* Kích thước của bullet */
+    height: 12px;
+    background-color: #ccc;   /* Màu sắc mặc định của bullet */
+    opacity: 0.7;             /* Độ mờ */
+    margin: 0 5px;            /* Khoảng cách giữa các bullet */
+    transition: background-color 0.3s, transform 0.3s; /* Hiệu ứng chuyển màu và phóng to */
+}
+.custom-pagination .swiper-pagination-bullet-active {
+    background-color: #007aff; /* Màu của bullet khi active */
+    opacity: 1;
+    transform: scale(1.2);     /* Tăng kích thước khi được chọn */
+}
